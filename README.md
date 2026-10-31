@@ -196,14 +196,14 @@ Set in `Core/Src/main.c` (`USER CODE BEGIN PD`). Values tuned on the desk:
 | `D_REVERSE_MM` | Retreat at or below this gap (200) |
 | `D_STOP_MM` | Brake at or below this gap (250) |
 | `D_RELEASE_MM` | Drive forward again only above this gap (300) |
-| `D_FAR_MM` | Gap beyond which the follower runs at `CMD_FOLLOW` (450) |
+| `D_FAR_MM` | Gap beyond which the follower runs at `CMD_FOLLOW` (500) |
 | `CMD_SEARCH` | Speed with nothing in sight (400 = 40 %) |
 | `CMD_FOLLOW` | Maximum follow speed (1000 = full throttle) |
 | `CMD_MIN` | Slowest crawl (150) |
-| `CMD_REVERSE` | Retreat speed (400 = 40 %) |
+| `CMD_REVERSE` | Retreat speed (800 = 80 %) |
 | `CMD_RAMP` | Maximum speed increase per tick (100) |
 
-Between 25 cm and 45 cm the follow speed scales linearly from `CMD_MIN` up to `CMD_FOLLOW`.
+Between 25 cm and 50 cm the follow speed scales linearly from `CMD_MIN` up to `CMD_FOLLOW`.
 
 ---
 
